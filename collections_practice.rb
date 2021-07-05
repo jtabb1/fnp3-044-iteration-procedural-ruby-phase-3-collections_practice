@@ -45,4 +45,17 @@ def kesha_maker(ary)
   end
   out
 end
-  
+
+def find_a(ary)
+  ary.select do |e|
+    e[0] == 'a'
+  end
+end
+
+def sum_array(ary)
+  ary.inject(0) {|s,e| s += e }
+end
+
+def add_s(ary)
+  ary.each_with_index.collect{|e,i| i == 1 ? e : e << "s"}
+end
